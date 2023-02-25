@@ -1,0 +1,16 @@
+<header class="p-3 shadow bg-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+            <a href="/" class="btn btn-primary">Home</a>
+            {{#if userData.isLogged}}
+                <span class="text-success">Welcome,  <strong>{{ userData.first_name }}</strong></span>
+                <form action="/logout" method="GET">
+                    <button type="submit" class="btn btn-outline-danger">Logout</button>
+                </form>
+            {{else}}
+                <a href="/register" class="btn btn-outline-primary">Register</a>
+                <a href="/login" class="btn btn-outline-primary">Login</a>
+            {{/if}}
+        </div>
+    </div>
+</header>

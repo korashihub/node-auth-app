@@ -1,0 +1,18 @@
+<div class="d-flex flex-column align-items-center justify-content-center mt-5">
+    {{#if wrongPass}}
+        <div class="alert alert-danger" role="alert">
+            You entered an incorrect password.
+        </div>
+    {{/if}}
+    <form class="auth-form" action="login-submit" method="POST">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
+            <label for="email">Email Address</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+            <label for="password">Password</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg w-100">Login</button>
+    </form>
+</div>

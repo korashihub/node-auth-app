@@ -1,0 +1,31 @@
+<div class="d-flex flex-column align-items-center justify-content-center mt-5">
+    {{#if data.alert.success.isActive}}
+        <div class="alert alert-success" role="alert">
+            Your account has been successfully created.
+        </div>
+    {{/if}}
+    {{#if data.alert.error.isActive}}
+        <div class="alert alert-danger" role="alert">
+            There is an account registered to this e-mail account.
+        </div>
+    {{/if}}
+    <form class="auth-form" action="register-submit" method="POST">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+            <label for="email">Email Address</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" required>
+            <label for="first_name">First Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="test" class="form-control" id="last_name" name="last_name" placeholder="Last Name" required>
+            <label for="last_name">Last Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+            <label for="password">Password</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg w-100">Register</button>
+    </form>
+</div>

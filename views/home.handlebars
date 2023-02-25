@@ -1,0 +1,13 @@
+<div class="d-flex flex-column justify-content-center align-items-center gap-3">
+    <div class="text-center mt-5">
+        Welcome to Node.js&MongoDB auth app.
+    </div>
+    {{#if userData.isLogged}}
+        <ul class="list-group" style="max-width:350px;">
+            <li class="list-group-item"><strong>ID:</strong> {{ userData._id }}</li>
+            <li class="list-group-item"><strong>Email:</strong> {{ userData.email }}</li>
+            <li class="list-group-item"><strong>First Name:</strong> {{ userData.first_name }}</li>
+            <li class="list-group-item"><strong>Last Name:</strong> {{ userData.last_name }}</li>
+        </ul>
+    {{/if}}
+</div>
