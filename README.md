@@ -1,5 +1,5 @@
 # node-auth-app
-It is a simple auth application developed with Node.js and mongoDB.
+It is a auth application developed with Node.js and mongoDB.
 
 ## Project setup
 ```
